@@ -1,0 +1,62 @@
+[
+    {
+      "signo": "Aries",
+      "caracteristicas": "Impulsivo, Aries no piensa mucho en sus acciones. Es quien primero actúa, luego reflexiona. Agitado, necesita mucha actividad para gastar energía, de lo contrario puede volverse agresivo y explosivo",
+      "imagen": "aries.png"
+    },
+    {
+      "signo": "Tauro",
+      "caracteristicas": "Terco, Tauro es decidido y protector. Necesita seguridad y estabilidad para ser feliz, y lo consigue con trabajo y concentración. Cariñoso, Tauro puede ser celoso de sus seres queridos.",
+      "imagen": "tauro.png"
+    },
+    {
+      "signo": "Géminis",
+      "caracteristicas": "Espontáneo y un poco inestable, el Géminis es una auténtica caja de sorpresas. Como es volátil, muchas veces ni el Géminis se entiende, pero lo importante es que siempre está de buen humor y buscando aventuras.",
+      "imagen": "geminis.png"
+    },
+    {
+      "signo": "Cáncer",
+      "caracteristicas": "La familia es la palabra clave para Cáncer. Tranquilo y emotivo, le gusta quedarse en casa, hacer programas con sus seres queridos y disfrutar momentos con familiares. Curioso, hace amigos con facilidad, pero puede ser un poco sensible",
+      "imagen": "cancer.png"
+    },
+    {
+      "signo": "Leo",
+      "caracteristicas": "Este es el signo que vino a brillar. A Leo le gusta llamar la atención y ser el centro del mundo, pero también es muy amable y leal. Simpático y comunicativo, el nativo de Leo puede ser un poco celoso y inseguro.",
+      "imagen": "leo.png"
+    },
+    {
+      "signo": "Virgo",
+      "caracteristicas": "Perspicaz e inteligente, el Virgo está acostumbrado al éxito, por lo que se carga mucho como los demás. Por eso, puede ser un poco rígido y lastimar a quienes ama. Tímido, prefiere los programas tranquilos a los grandes eventos. ",
+      "imagen": "virgo.png"
+    },
+    {
+      "signo": "Libra",
+      "caracteristicas": "A los libertinos les gusta lo bello y armonioso. No les gustan los conflictos y por eso tratan de ser imparciales en los debates y peleas. Indecisos, les puede llevar mucho tiempo elegir cosas simples, como qué comer o El buen gusto define a este signo.",
+      "imagen": "libra.png"
+    },
+    {
+      "signo": "Escorpio",
+      "caracteristicas": "Decidido, Escorpio hará todo lo posible para lograr sus objetivos. Sensual y romántico, le gusta estar en una relación, pero puede ser desconfiado hasta que se siente seguro con la persona",
+      "imagen": "escorpio.png"
+    },
+    {
+      "signo": "Sagitario",
+      "caracteristicas": "Un signo que disfruta de la vida, siempre está buscando acción y vive rodeado de amigos. Este es el signo de Sagitario, que es soñador y le encanta conocer gente y lugares nuevos.",
+      "imagen": "sagitario.png"
+    },
+    {
+      "signo": "Capricornio",
+      "caracteristicas": "Trabajador, tímido y educado, Capricornio puede parecer cerrado e incluso antipático, pero necesita confiar en quien está a su lado para abrirse por completo. Con paciencia, se muestra como un amigo leal y un fiel compañero.",
+      "imagen": "capricornio.png"
+    },
+    {
+      "signo": "Acuario",
+      "caracteristicas": "Independientemente, Acuario valora mucho su libertad. Les gusta viajar, salir y conocer gente nueva. Tienen una mente abierta y les gusta todo lo que sea innovador y moderno, desde la ropa y la tecnología, hasta el comportamiento y sus actitudes.",
+      "imagen": "acuario.png"
+    },
+    {
+      "signo": "Piscis",
+      "caracteristicas": "Este es el signo más romántico del zodiaco. Soñador y cariñoso, siempre está preocupado por el bienestar de los demás. Sensible y cariñoso, cree en los cuentos de hadas y piensa que todos merecen un final feliz",
+      "imagen": "piscis.png"
+    }
+  ]
