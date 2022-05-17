@@ -33,53 +33,51 @@ function Homepage() {
   const enviarFormulario = (e) => {
     e.preventDefault();
     setMostrarSigno(true);
-    console.log(nombre, genero, fechaNacimiento, idSigno, email);
   };
 
   return (
-    <Container className="p-3 ">
+    <Container className="p-3">
       <Header />
-      <Container className="p-5 mb-4 bg-light rounded-3">
-        <Form onSubmit={enviarFormulario}>
+      <Container className="p-5 mb-4 bg-light rounded-3 container-form">
+        <Form onSubmit={enviarFormulario} >
           {/**NOMBRE */}
           <Form.Group controlId="formBasicName">
-            <Form.Label>Nombre</Form.Label>
+            <Form.Label>Nombre y Apellido:</Form.Label>
             <Form.Control
               type="text"
-              placeholder="Ingrese su nombre"
-              onChange={getNombre}
+              placeholder="Ingrese su nombre y apellido"
+              onChange={getNombre} required
             />
           </Form.Group>
           {/**EMAIL */}
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
+            <Form.Label>Email:</Form.Label>
             <Form.Control
               type="email"
               onChange={getEmail}
-              placeholder="Enter email"
+              placeholder="Ingrese email" required
             />
             <Form.Text className="text-muted">
-              Nunca compartiremos tu email con nadie.
+              Su información esta protegida.
             </Form.Text>
           </Form.Group>
           {/**GENERO */}
           <Form.Group controlId="formBasicGenero">
-            <Form.Label>Genero</Form.Label>
-            <Form.Control as="select" onChange={getGenero}>
-              <option value="">Seleccione su genero</option>
+            <Form.Label>Género</Form.Label>
+            <Form.Control as="select" onChange={getGenero} required>
+              <option value="">Seleccione su género</option>
               <option value="F">Femenino</option>
               <option value="M">Masculino</option>
-              <option value="O">Otro</option>
             </Form.Control>
           </Form.Group>
           {/**FECAH NACIMIENTO */}
           <Form.Group controlId="formBasicFechaNacimiento">
-            <Form.Label>Fecha de nacimiento</Form.Label>
-            <Form.Control type="date" onChange={getFechaNacimiento} />
+            <Form.Label>Fecha de nacimiento:</Form.Label>
+            <Form.Control type="date" onChange={getFechaNacimiento} required />
           </Form.Group>
           {/**BOTON */}
-          <Form.Group controlId="formBasicSigno">
-            <Button variant="primary" type="submit">
+          <Form.Group controlId="formBasicSigno" className="div-button">
+            <Button type="submit" className="button">
               Calcular la magia
             </Button>
           </Form.Group>

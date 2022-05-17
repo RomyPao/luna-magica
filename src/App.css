@@ -32,7 +32,67 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.body {
+  background-color: #DDA0DD !important;
+}
+
+.header-title {
+  color: #fff;
+  font-family: 'Smooch', cursive;
+  text-align: center;
+  font-size: 100px;
+}
+
+.header-title:hover {
+  color: #9400D3;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.header-subtitle {
+  color: #fff;
+  font-family: 'Macondo', cursive;
+  text-align: center;
+}
+
+.text {
+  font-size: 20px;
+}
+
+.container-form {
+  background-image: url("../public/tarot2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  font-weight: bold;
+}
+
+.text-muted {
+  color: #D3D3D3;
+}
+
+.div-button {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  margin-top: 20px;
+  background-color: #9400D3 !important;
+  border-color: #9400D3 !important;
+}
+
+.button:hover {
+  background-color: #800080 !important;
+  border-color: #800080 !important;
 }
