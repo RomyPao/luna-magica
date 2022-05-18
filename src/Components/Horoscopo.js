@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import horoscopo from "../Data/horoscopo.json";
 
-function Horoscopo(props) {
+function Horoscopo() {
     const [prediccion, setPrediccion] = useState([]);
 
     const sortearPrediccion = () => {

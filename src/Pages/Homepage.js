@@ -6,6 +6,7 @@ import DetalleSigno from "../Components/DetalleSigno";
 import Header from "../Components/Header";
 import Horoscopo from "../Components/Horoscopo";
 import buscarSigno from "../Utils/buscarSigno";
+import Tarot from "../Components/Tarot";
 
 function Homepage() {
   const [nombre, setNombre] = useState("");
@@ -14,6 +15,8 @@ function Homepage() {
   const [email, setEmail] = useState("");
   const [idSigno, setSigno] = useState(0);
   const [mostrarSigno, setMostrarSigno] = useState(false);
+  const [mostrarTarot, setMostrarTarot] = useState(false);
+  const [mostrarBotonTarot, setMostrarBotonTarot] = useState(false);
 
   const getNombre = (e) => {
     setNombre(e.target.value);
@@ -22,18 +25,27 @@ function Homepage() {
     setGenero(e.target.value);
   };
   const getFechaNacimiento = (e) => {
-    setFechaNacimiento(new Date(e.target.value));
-    let mes = parseInt(e.target.value.split("/")[1]);
-    let dia = parseInt(e.target.value.split("/")[2]);
+    let mes = parseInt(e.target.value.split("-")[1]);
+    let dia = parseInt(e.target.value.split("-")[2]);
     setSigno(buscarSigno(mes, dia));
   };
+
   const getEmail = (e) => {
     setEmail(e.target.value);
   };
   const enviarFormulario = (e) => {
     e.preventDefault();
     setMostrarSigno(true);
+    setMostrarBotonTarot(true);
   };
+
+  const tirarCartasTarot = (e) => {
+    setMostrarTarot(true);
+  };
+
+  const ocultarTarot = (e) => {
+    setMostrarTarot(false);
+  }
 
   return (
     <Container className="p-3">
@@ -83,12 +95,30 @@ function Homepage() {
           </Form.Group>
         </Form>
       </Container>
+      {/* MOSTRAR SIGNO */}
       {mostrarSigno && (
         <Container className="p-5 mb-4 bg-light rounded-3">
           <DetalleSigno signo={idSigno} />
           <Horoscopo signo={idSigno} />
         </Container>
       )}
+
+      <Container>
+        {/* MOSTRAR BOTON TAROT */}
+        {mostrarBotonTarot && (<div className="text-center">
+          <Button className="form-button bg-transparent border-0" onClick={tirarCartasTarot}>
+            <img src="./tarot1.png" alt="tarot" className="img-fluid img" />
+            <br />
+            <h5 className="text-black">Tira las cartas!!</h5>
+          </Button>
+        </div>)}
+
+        {mostrarTarot && (
+          <Container className="p-5 mb-4 bg-light rounded-3">
+            <Tarot tirarCartasTarot={tirarCartasTarot} ocultarTarot={ocultarTarot} />
+          </Container>
+        )}
+      </Container>
     </Container>
   );
 }

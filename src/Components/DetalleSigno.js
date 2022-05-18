@@ -6,7 +6,7 @@ function DetalleSigno(props) {
   const urlImgs = "./img/"
 
   useEffect(() => {
-    setCaracSigno(zodiaco[props.signo]);
+    setCaracSigno(zodiaco[props.signo[0]]);
   }, [props.signo]);
 
   return (
