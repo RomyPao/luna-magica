@@ -77,8 +77,8 @@
   font-weight: bold;
 }
 
-.text-muted {
-  color: #D3D3D3;
+.text-email {
+  color: #dcdcdc !important;
 }
 
 .div-button {

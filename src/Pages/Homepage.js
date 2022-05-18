@@ -69,7 +69,7 @@ function Homepage() {
               onChange={getEmail}
               placeholder="Ingrese email" required
             />
-            <Form.Text className="text-muted">
+            <Form.Text className="text-email">
               Su información esta protegida.
             </Form.Text>
           </Form.Group>
